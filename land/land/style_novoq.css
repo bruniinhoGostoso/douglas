@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e7dede;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.quiz-section {
+    text-align: center;
+}
+
+.quiz-section h1 {
+    font-size: 3rem;
+    color: #014d14;
+    margin-bottom: 20px;
+}
+
+.quiz-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.quiz-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.quiz-option {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.quiz-option i {
+    font-size: 3rem;
+    color: #014d14;
+    margin-bottom: 15px;
+}
+
+.quiz-option h2 {
+    font-size: 1.8rem;
+    color: #014d14;
+    margin-bottom: 10px;
+}
+
+.quiz-option p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.quiz-option button {
+    padding: 10px 20px;
+    background-color: #014d14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-option button:hover {
+    background-color: #0ab234;
+}
+
+/*linear-gradient(#b0e57c, #2a6d32)
+background-color: #f6e3b4;
+*/
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 70px;
+    width: 100%;
+    /* Verde escuro para a barra de navegação */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f2a52e; /* Laranja suave para hover */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+.menu li a.active {
+    color: #0ab234; /* Muda a cor do texto para verde */
+    border-bottom: 3px solid #0ab234; /* Adiciona o traço verde abaixo do item ativo */
+}
+
+.menu li a:hover {
+    color: #0ab234;
+    border-bottom: 3px solid #0ab234; /* Adiciona o traço verde ao passar o mouse */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+     /* Verde escuro para o texto do submenu */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+     /* Cor de fundo do submenu */
+    top: 100%;
+    left: -7%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: #ffffff; 
+}
+
+.submenu li a:hover {
+    background-color: transparent; /* Laranja suave para hover no submenu */
+}

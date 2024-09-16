@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/*linear-gradient(#b0e57c, #2a6d32)
+background-color: #f6e3b4;
+*/
+
+body {
+    background: linear-gradient(#b0e57c, #2a6d32); /* Gradiente verde suave */
+    overflow-y: hidden;
+    background: url('http://images6.fanpop.com/image/photos/32400000/Walt-Disney-Screencaps-Princess-Tiana-Prince-Naveen-walt-disney-characters-32440397-5000-2813.jpg');
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    /* Verde escuro para a barra de navegação */
+}
+
+.logo {
+    width: 170px;
+}
+
+.logo img {
+    width: 90%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f2a52e; /* Laranja suave para hover */
+}
+
+section {
+    
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+     /* Cor de fundo suave para a seção */
+}
+
+.section__text {
+    color: #1b532f; /* Verde escuro para o texto */
+    width: 50%;
+    text-align: center;
+}
+
+
+.section__text h1 {
+    font-size: 4rem;
+    margin-top: 10px;
+    text-shadow: 3px 0 #d8e1da,
+        -3px 0 rgba(0, 255, 102, 0.47),
+        0 3px #50ae60,
+        0 -3px #dcefdf,
+        2px 2px #def1e1,
+        -2px -2px #c3e0c8,
+        2px -2px #f6fff8,
+        -2px 2px #f7faf8; /* Efeitos de sombra no texto em verde */
+}
+
+.section__text p {
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section__text div {
+    text-align: left;
+}
+
+.section__text div button {
+    font-size: 22px;
+    color: rgb(14, 13, 13);
+    border: none;
+    background-color: #2a6d32; /* Verde escuro para botões */
+    margin-right: 30px;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.section__text div button i {
+    font-size: 38px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.section__text div button:first-child {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2a52e; /* Laranja para o botão "Assistir Agora" */
+}
+
+.section__text div button:last-child {
+    border: 1px solid #2a6d32;
+    background-color: transparent;
+}
+
+.section__img {
+    position: absolute;
+    right: -50px;
+    bottom: 80px;
+}
+
+.section__img img {
+    width: 700px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: transparent; /* Laranja suave para o submenu */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+     /* Verde escuro para o texto do submenu */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -8%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: #2a6d32; /* Verde escuro para o texto do submenu */
+}
+
+.submenu li a:hover {
+    background-color: transparent; /* Laranja suave para hover no submenu */
+}

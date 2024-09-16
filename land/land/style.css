@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/*linear-gradient(#b0e57c, #2a6d32)
+background-color: #f6e3b4;
+*/
+
+body {
+    background: linear-gradient(#b0e57c, #2a6d32); /* Gradiente verde suave */
+    overflow-y: hidden;
+    background: url("https://wallpapercave.com/wp/wp2271220.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 170px;
+}
+
+.logo img {
+    width: 70%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f2a52e;
+     /* Laranja suave para hover */
+}
+
+section {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: flex-start; /* Alinha o conteúdo no topo da seção */
+    padding-top: 50px; /* Adiciona um espaçamento no topo */
+}
+
+.section__text {
+    color: #ffffff;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 10px; /* Move o texto e os botões mais para cima */
+}
+
+
+
+.section__text p {
+    font-size: 20px;
+    margin: 20px 0 15px 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section__text div {
+    text-align: left;
+    margin-top: 10px; /* Ajusta a margem superior entre o texto e os botões */
+}
+
+.section__text div button {
+    font-size: 22px;
+    color: white;
+    border: none;
+    background-color: #2a6d32;
+    margin-right: 30px;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Reduz a margem superior para os botões */
+}
+
+.section__img {
+    position: absolute;
+    right: -50px;
+    bottom: 80px;
+}
+
+
+.section__img img {
+    width: 700px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+.menu li a.active {
+    color: #0ab234; /* Muda a cor do texto para verde */
+    border-bottom: 3px solid #0ab234; /* Adiciona o traço verde abaixo do item ativo */
+}
+
+.menu li a:hover {
+    color: #0ab234;
+    border-bottom: 3px solid #0ab234; /* Adiciona o traço verde ao passar o mouse */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+    
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+     
+    top: 100%;
+    left: -7%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: #ffffff; /* Verde escuro para o texto do submenu */
+}
+
+.submenu li a:hover {
+    border-bottom: none;
+    color: #f2a52e; /* Verde escuro para o texto do submenu */
+}

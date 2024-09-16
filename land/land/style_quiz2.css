@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/*linear-gradient(#b0e57c, #2a6d32)
+background-color: #f6e3b4;
+*/
+
+body {
+    background: linear-gradient(#b0e57c, #2a6d32); /* Gradiente verde suave */
+    overflow-y: hidden;
+    background: url('https://wallpapers.com/images/high/princess-tiana-exnb7kglv70z3qd8.webp');
+    background-size: cover;
+}
+
+
+section {
+    
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+     /* Cor de fundo suave para a seção */
+}
+
+.section__text {
+    color: #000000; /* Verde escuro para o texto */
+    width: 50%;
+    text-align: center;
+}
+
+.section__text h1 {
+    font-size: 4rem;
+    margin-top: 10px;
+    text-shadow: 3px 0 #1e5e29,
+        -3px 0 rgba(0, 255, 102, 0.47),
+        0 3px #1e5e29,
+        0 -3px #1e5e29,
+        2px 2px #1e5e29,
+        -2px -2px #1e5e29,
+        2px -2px #1e5e29,
+        -2px 2px #1e5e29; /* Efeitos de sombra no texto em verde */
+}
+
+.section__text p {
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section__text div {
+    text-align: left;
+}
+
+.section__text div button {
+    font-size: 22px;
+    color: white;
+    border: none;
+    background-color: #2a6d32; /* Verde escuro para botões */
+    margin-right: 30px;
+    font-weight: 300;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.section__text div button i {
+    font-size: 38px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.section__text div button:first-child {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2a52e; /* Laranja para o botão "Assistir Agora" */
+}
+
+.section__text div button:last-child {
+    border: 1px solid #2a6d32;
+    background-color: transparent;
+}
+
+
+
+

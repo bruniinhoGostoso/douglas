@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir Filme - A Princesa e o Sapo</title>
+    <style>
+        
+     body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px; /* Ajuste este valor para garantir que o conteúdo não fique atrás do menu */
+
+}
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    
+    <div id="menu-container"></div> <!-- Lugar onde o menu será inserido -->
+
+
+    <div class="video-container">
+        <h1>Assista ao Filme - A Princesa e o Sapo</h1>
+        <iframe src="https://drive.google.com/file/d/1__kc1FMfND14ypIlKp7yTio58l0pLVKE/preview" width="640" height="480"
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+  
+    <script src="menu.js"></script>
+     <script>
+        // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+        window.onload = function () {
+            insertMenu();
+            setActiveMenuItem();
+        };
+    </script>
+
+</body>
+
+</html>

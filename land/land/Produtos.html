@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      padding-top: 60px; /* Ajuste este valor para garantir que o conteúdo não fique atrás do menu */
+z-index: 1000px;
+      background-color: #f4f4f4;
+    }
+
+  
+
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .category {
+      flex-basis: 30%;
+      background-color: #fff;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .category img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .category h2 {
+      padding: 15px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+
+    .products {
+      padding: 10px;
+    }
+
+    .products ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .products ul li {
+      padding: 8px 0;
+    }
+
+    .products ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .products ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Estilos Responsivos */
+    @media (max-width: 768px) {
+      .category {
+        flex-basis: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .category {
+        flex-basis: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+    <div id="menu-container"></div>
+  <h1>Produtos Disponíveis</h1>
+  
+  <div class="container">
+
+    <!-- Categoria Canecas -->
+    <div class="category">
+      <img src="img/caneca.jpg" alt="Canecas">
+      <h2>Canecas</h2>
+      <div class="products">
+        <ul>
+          <li><a href="#">Caneca Personalizada</a></li>
+          <li><a href="#">Caneca Simples</a></li>
+          <li><a href="#">Caneca Colorida</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Categoria Camisas -->
+    <div class="category">
+      <img src="camisas.jpg" alt="Camisas">
+      <h2>Camisas</h2>
+      <div class="products">
+        <ul>
+          <li><a href="#">Camisa Branca</a></li>
+          <li><a href="#">Camisa Estampada</a></li>
+          <li><a href="#">Camisa Social</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Categoria Moletons -->
+    <div class="category">
+      <img src="moletons.jpg" alt="Moletons">
+      <h2>Moletons</h2>
+      <div class="products">
+        <ul>
+          <li><a href="#">Moletom Preto</a></li>
+          <li><a href="#">Moletom Cinza</a></li>
+          <li><a href="#">Moletom com Capuz</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="menu.js"></script>
+     <script>
+        // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+        window.onload = function () {
+            insertMenu();
+            setActiveMenuItem();
+        };
+    </script>
+</body>
+</html>

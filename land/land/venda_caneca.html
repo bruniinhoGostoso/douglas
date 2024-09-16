@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Canecas</title>
+    <link rel="stylesheet" href="style_caneca.css"> <!-- Adicione o caminho correto para seu CSS -->
+</head>
+<body>
+    <div id="menu-container"></div> <!-- Lugar onde o menu será inserido -->
+
+    <div class="container">
+        <h1>Canecas Disponíveis</h1>
+        <div class="products">
+            <!-- Caneca 1 -->
+            <div class="product">
+                <img src="img/caneca.jpg" alt="Caneca 1">
+                <h2>Caneca Personalizada</h2>
+                <p>R$ 29,90</p>
+                <button onclick="window.location.href='https://link-da-pagina-da-caneca.com';">Ver mais</button>
+            </div>
+            
+            <!-- Caneca 2 -->
+            <div class="product">
+                <img src="img/caneca2.jpg"  alt="Caneca 2">
+                <h2>Caneca Mágica</h2>
+                <p>R$ 49,90</p>
+                <button onclick="window.location.href='https://www.toyshow.com.br/presentes-e-decoracao-geek/caneca-tiana-a-princesa-e-o-sapo-disney-preto';">Ver mais</button>
+            </div>
+            
+            <!-- Caneca 3 -->
+            <div class="product">
+                <img src="img/caneca33.png" alt="Caneca 3">
+                <h2>Caneca de Vidro</h2>
+                <p>R$ 35,00</p>
+                <button onclick="window.location.href='https://shopee.com.br/Caneca-Princesa-Tiana-A-Princesa-e-o-Sapo-i.1091499747.22197072130';">Ver mais</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+     <script>
+        // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+        window.onload = function () {
+            insertMenu();
+            setActiveMenuItem();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - A Princesa e o Sapo</title>
+    <link rel="stylesheet" href="style_contato.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="menu-container"></div> <!-- Lugar onde o menu será inserido -->
+
+   
+
+
+    <div class="container">
+        <section class="contact-section">
+            <!-- Lado esquerdo com texto e ícones -->
+            <div class="left-side">
+                <h1>ENTRAR EM CONTATO</h1>
+                <h2>Estamos ansiosos para iniciar um projeto com você!</h2>
+
+                <div class="contact-icons">
+                    <div class="icon-item">
+                        <i class="fa fa-envelope"></i>
+                        <span>jlsn1@aluno.ifal.edu</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa fa-phone"></i>
+                        <span>(82) 99165-7293</span>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Lagoa Da Canoa, 48</span>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/brun0_s4nti?utm_source=qr"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Lado direito com os dois formulários -->
+            <div class="right-side">
+                <!-- Primeiro formulário -->
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+               
+            </div>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+     <script>
+        // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+        window.onload = function () {
+            insertMenu();
+            setActiveMenuItem();
+        };
+    </script>
+
+
+</body>
+</html>
