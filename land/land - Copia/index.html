@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page - A Princesa e o Sapo</title>
+</head>
+<body>
+    <div class="container">
+       <nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/disney.png">
+        </a>
+    </div>
+   
+    <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+            <a href="Filme.html">Filmes</a>
+            <ul class="submenu">
+                <li><a href="Assistir.html">Assistir</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="Produtos.html">Produtos</a>
+            <ul class="submenu">
+                <li><a href="venda_caneca.html">Caneca</a></li>
+                <li><a href="moletom.html">Moletom</a></li>
+            </ul>
+        </li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+        <section>
+            <div class="section__text">
+                <img src="img/di.png" width="200px"> <!-- Imagem da Tiana com o Sapo -->
+                <p>
+                    "A Princesa e o Sapo" é uma animação da Disney lançada em 2009. 
+                    Ambientada em Nova Orleans, o filme conta a história de Tiana, 
+                    uma jovem trabalhadora que sonha em abrir seu próprio restaurante, 
+                    mas acaba envolvida em uma aventura mágica com o Príncipe Naveen, 
+                    que foi transformado em sapo por um feiticeiro.
+                </p>
+
+                <div onclick="window.location.href='Assistir.html'">
+                    <button>
+                        <i class="fa fa-play-circle"></i>
+                        Assistir Agora
+                    </button>
+                    <button onclick="window.location.href='Filme.html'">Mais informações</button>
+                </div>
+            </div>
+           
+        </section>
+    </div>
+</body>
+</html>

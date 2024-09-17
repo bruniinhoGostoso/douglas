@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - A Princesa e o Sapo</title>
+    <link rel="stylesheet" href="style_filme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <div id="menu-container"></div>
+
+    <div class="container">
+        <section class="filmes-section">
+            <h1>Filmes - A Princesa e o Sapo</h1>
+            <div class="filme">
+                <h2>Sinopse</h2>
+                <p>"A Princesa e o Sapo" é um filme de animação da Disney que conta a história de Tiana, uma jovem determinada a realizar o sonho de abrir seu próprio restaurante. Quando ela conhece o Príncipe Naveen, que foi transformado em sapo por um feiticeiro malvado, os dois embarcam em uma jornada mágica pelos pântanos de Nova Orleans, aprendendo lições sobre amor, amizade e determinação.</p>
+            </div>
+
+            <div class="trailer">
+                <h2>Trailer</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gqgPzVsJhB8?si=1La8ZyHnK0Pz1-UX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="personagens">
+                <h2>Personagens Principais</h2>
+                <ul>
+                    <li><strong>Tiana:</strong> A protagonista determinada e corajosa que sonha em ter seu próprio restaurante.</li>
+                    <li><strong>Príncipe Naveen:</strong> Um príncipe transformado em sapo, que precisa da ajuda de Tiana para quebrar a maldição.</li>
+                    <li><strong>Dr. Facilier:</strong> O vilão feiticeiro que lançou a maldição no príncipe Naveen.</li>
+                    <li><strong>Louis:</strong> Um jacaré trompetista sonhador que acompanha Tiana e Naveen em sua jornada.</li>
+                </ul>
+            </div>
+
+            <div class="detalhes-filme">
+                <h2>Detalhes do Filme</h2>
+                <ul>
+                    <li><strong>Direção:</strong> Ron Clements, John Musker</li>
+                    <li><strong>Ano de Lançamento:</strong> 2009</li>
+                    <li><strong>Duração:</strong> 97 minutos</li>
+                    <li><strong>Gênero:</strong> Animação, Fantasia, Musical</li>
+                    <li><strong>Distribuição:</strong> Walt Disney Studios</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+       // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+       window.onload = function () {
+           insertMenu();
+           setActiveMenuItem();
+       };
+   </script>
+
+</body>
+</html>

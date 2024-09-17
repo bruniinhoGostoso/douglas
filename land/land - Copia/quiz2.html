@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="quizes.css">
+    <title>Landing page - A Princesa e o Sapo</title>
+</head>
+<body>
+   
+           
+            <div id="menu-container"></div>
+
+        <section>
+            <div class="section__text">
+                <img src="img/semFundo dysney.png" width="200px"> <!-- Imagem da Tiana com o Sapo -->
+                <h1>A Princesa e o Sapo</h1>
+                <p>
+                    Será que você conhece tudo sobre o livro? Teste seu conhecimento
+                </p>
+
+                <div>
+                    <button onclick="window.location.href='https://wordwall.net/pt/resource/17490586/quiz-da-princesa-e-o-sapo';">
+                        <i class="fa fa-play-circle"></i>
+                        Jogar Agora
+                    </button>
+                    <button>Mais informações</button>
+                </div>
+            </div>
+            <div class="section__img">
+                <img src="img/princesa_sapo_poster.png" alt="A Princesa e o Sapo">
+            </div>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+       // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+       window.onload = function () {
+           insertMenu();
+           setActiveMenuItem();
+       };
+   </script>
+</body>
+</html>

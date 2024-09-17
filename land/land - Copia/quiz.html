@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - A Princesa e o Sapo</title>
+    <link rel="stylesheet" href="style_quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="menu-container"></div>
+
+    
+
+
+    <div class="container">
+        <section class="quiz-section">
+            <h1>Quiz - A Princesa e o Sapo</h1>
+            <p>Escolha o quiz que deseja fazer:</p>
+
+            <div class="quiz-options">
+                <div class="quiz-option">
+                    <i class="fa fa-film"></i>
+                    <h2>Quiz sobre o Filme</h2>
+                    <p>Teste seus conhecimentos sobre o enredo, personagens e detalhes do filme "A Princesa e o Sapo".</p>
+                    <button onclick="window.location.href='quiz1.html'">Iniciar Quiz</button>
+                </div>
+
+                <div class="quiz-option">
+                    <i class="fa fa-music"></i>
+                    <h2>Quiz sobre o livro</h2>
+                    <p>Você conhece a história da princesa e o sapo contada pelos livros? Faça o quiz e descubra!</p>
+                    <button onclick="window.location.href='quiz2.html'">Iniciar Quiz</button>
+                </div>
+
+                <div class="quiz-option">
+                    <i class="fa fa-star"></i>
+                    <h2>Quiz sobre os Personagens</h2>
+                    <p>Descubra o quanto você sabe sobre Tiana, Naveen e os outros personagens!</p>
+                    <button onclick="window.location.href='quiz3.html'">Iniciar Quiz</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+       // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+       window.onload = function () {
+           insertMenu();
+           setActiveMenuItem();
+       };
+   </script>
+
+</body>
+</html>

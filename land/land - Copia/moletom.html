@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Moletons</title>
+    <link rel="stylesheet" href="style_caneca.css"> <!-- Certifique-se de ajustar o caminho do CSS -->
+</head>
+<body>
+<div id="menu-container"></div>
+
+    <div class="container">
+        <!-- Seção Moletons -->
+        <h1>Moletons Disponíveis</h1>
+        <div class="products">
+            <!-- Moletom 1 -->
+            <div class="product">
+                <img src="img/moletom.png" alt="Moletom 1">
+                <h2>Moletom A princesa e o sapo - Tiana</h2>
+                <p>R$ 150,00</p>
+                <button onclick="window.location.href='https://studioatena.lojavirtualnuvem.com.br/produtos/moletom-a-princesa-e-o-sapo-tiana/';">Ver mais</button>
+            </div>
+
+            <!-- Moletom 2 -->
+            <div class="product">
+                <img src="img/moletom2.png" alt="Moletom 2">
+                <h2>Moletom A princesa e o sapo - Naveen</h2>
+                <p>R$ 150,00</p>
+                <button onclick="window.location.href='https://studioatena.lojavirtualnuvem.com.br/produtos/moletom-a-princesa-e-o-sapo-naveen/';">Ver mais</button>
+            </div>
+
+            <!-- Moletom 3 -->
+            <div class="product">
+                <img src="img/moletom3.png" alt="Moletom 3">
+                <h2>Princesa e o Sapo - Tiana Sapo</h2>
+                <p>R$ 139,90</p>
+                <button onclick="window.location.href='https://studioatena.lojavirtualnuvem.com.br/produtos/moletom-nike-princesa-e-o-sapo-tiana-sapo1/';">Ver mais</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+       // Insere o menu na div com id 'menu-container' após o DOM estar carregado
+       window.onload = function () {
+           insertMenu();
+           setActiveMenuItem();
+       };
+   </script>
+</body>
+</html>
